@@ -155,7 +155,7 @@ class Config:
     picard_tol: float = 1e-3
 
     # Continue from the checkpoint saved by the previous run.
-    resume: bool = True
+    resume: bool = False
 
     # Saved-history plotting controls.  plot_until=None uses every saved
     # Picard iteration.  plot_only=True loads the checkpoint, creates figures
