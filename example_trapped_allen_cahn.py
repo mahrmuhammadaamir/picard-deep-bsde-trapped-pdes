@@ -181,7 +181,7 @@ class Config:
     ratio_tol: float = 1e-3
     min_K: int = 3
     max_K: int = 30
-    K_override: Optional[int] = None
+    K_override: Optional[int] = 5
 
     N: int = 100
     batch_size: int = 256
@@ -195,7 +195,7 @@ class Config:
     picard_tol: float = 1e-3
 
     # Continue from the checkpoint saved by the previous run.
-    resume: bool = True
+    resume: bool = False
 
     bsde_epochs_first: int = 6000
     bsde_epochs_later: int = 4000
